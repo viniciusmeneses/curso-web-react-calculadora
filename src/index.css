@@ -1,10 +1,16 @@
 @font-face {
-  font-family: 'RobotoMono';
+  font-family: 'RobotoMono-Thin';
   src: url('./fonts/RobotoMono-Thin.ttf');
 }
 
+@font-face {
+  font-family: 'RobotoMono-Regular';
+  src: url('./fonts/RobotoMono-Regular.ttf');
+}
+
 * {
-  font-family: 'RobotoMono', monospace;
+  box-sizing: border-box;
+  font-family: 'RobotoMono-Thin', monospace;
 }
 
 body {
@@ -19,5 +25,21 @@ body {
   align-items: center;
   text-align: center;
   color: #fff;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #009fff, #ec2f4b);
+  background-size: 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -1,22 +1,22 @@
 /* Criando variáveis com CSS puro e usando-as!!!
 Criar dentro do :root e com prefixo -- */
 :root {
-  --bg-buton: #f0f0f0;
-  --border-button: solid 1px #888;
+  --bg-buton: #f7f7f7;
+  --border-button: solid 1px #0000001f;
 }
 
 .button {
+  font-family: 'RobotoMono-Regular';
+  color: #3a3a3a;
   font-size: 1.4em;
   /* Para usar elas, precisa da função var() */
   background-color: var(--bg-buton);
-  border: none;
-  border-right: var(--border-button);
-  border-bottom: var(--border-button);
+  border: var(--border-button);
   outline: none;
 }
 
 .button:active {
-  background-color: #ccc;
+  background-color: #ececec;
 }
 
 .button.double {
@@ -33,5 +33,5 @@ Criar dentro do :root e com prefixo -- */
 }
 
 .button.operation:active {
-  background-color: #ff7519;
+  background-color: #ff7920;
 }
